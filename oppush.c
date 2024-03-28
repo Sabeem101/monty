@@ -18,7 +18,7 @@ void op_push(stack_t **head, unsigned int curr_line)
 	new = malloc(sizeof(stack_t));
 	if (!new)
 	{
-		fprintf(stderr, "Error: malloc failed");
+		fprintf(stderr, "Error: malloc failed\n");
 		itfrees(datas.head);
 		exit(EXIT_FAILURE);
 	}
