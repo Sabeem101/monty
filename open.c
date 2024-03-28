@@ -13,7 +13,7 @@ FILE *itopens(char *filename)
 	trgt_file = fopen(filename, "r");
 	if (!trgt_file)
 	{
-		fprintf(stderr, "Error: can't open file %s\n", filename);
+		fprintf(stderr, "Error: Can't open file %s\n", filename);
 		exit(EXIT_FAILURE);
 	}
 	return (trgt_file);

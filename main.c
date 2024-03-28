@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 	datas.mode = 0;
 	if (argc != 2)
 	{
-		fprintf(stderr, "Usage: Monty file\n");
+		fprintf(stderr, "USAGE: monty file\n");
 		exit(EXIT_FAILURE);
 	}
 	datas.trgt_file = itopens(argv[1]);
