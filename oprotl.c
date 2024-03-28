@@ -3,16 +3,16 @@
 /**
  * op_rotl - rotates the stack to it's head
  * @head: list head
- * @curr_line: opcode line number
+ * @line_number: opcode line number
  *
  * Return: void
  */
-void op_rotl(stack_t **head, unsigned int curr_line)
+void op_rotl(stack_t **head, unsigned int line_number)
 {
 	stack_t *prior = *head;
 	int x;
 
-	(void)curr_line;
+	(void)line_number;
 	if (!*head)
 	{
 		return;

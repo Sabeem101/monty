@@ -3,15 +3,15 @@
 /**
  * op_pop - delete the head element of the stack
  * @head: list head
- * @curr_line: opcode line number
+ * @line_number: opcode line number
  *
  * Return: void
  */
-void op_pop(stack_t **head, unsigned int curr_line)
+void op_pop(stack_t **head, unsigned int line_number)
 {
 	if (!*head)
 	{
-		fprintf(stderr, "L%d: can't pop an empty stack\n", curr_line);
+		fprintf(stderr, "L%d: can't pop an empty stack\n", line_number);
 		itfrees(datas.head);
 		exit(EXIT_FAILURE);
 	}

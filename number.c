@@ -46,7 +46,7 @@ void nverify(char *token)
 	}
 	else
 	{
-		fprintf(stderr, "L%d: usage: push integer\n", datas.curr_line);
+		fprintf(stderr, "L%d: usage: push integer\n", datas.line_number);
 		itfrees(datas.head);
 		exit(EXIT_FAILURE);
 	}

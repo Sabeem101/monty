@@ -3,13 +3,13 @@
 /**
  * switch_modes - switches modes between stack and queue
  * @head: list head
- * @curr_line: opcode line number
+ * @line_number: opcode line number
  *
  * Return: void
  */
-void switch_modes(stack_t **head, unsigned int curr_line)
+void switch_modes(stack_t **head, unsigned int line_number)
 {
-	(void)curr_line;
+	(void)line_number;
 	(void)head;
 
 	if (strcmp(datas.opcode, "queue") == 0)

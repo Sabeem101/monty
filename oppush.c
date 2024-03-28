@@ -3,16 +3,16 @@
 /**
  * op_push - pushes a new node the the beginning of the stack/queue
  * @head: head of list
- * @curr_line: opcode line number
+ * @line_number: opcode line number
  *
  * Return: void
  */
-void op_push(stack_t **head, unsigned int curr_line)
+void op_push(stack_t **head, unsigned int line_number)
 {
 	stack_t *new, *prior;
 	int x = 0;
 
-	(void)curr_line;
+	(void)line_number;
 	if (!head)
 		return;
 	new = malloc(sizeof(stack_t));

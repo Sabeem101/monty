@@ -34,14 +34,14 @@ void itexecs(void)
 	{
 		if (strcmp(datas.opcode, instrus[x].opcode) == 0)
 		{
-			instrus[x].f(&datas.head, datas.curr_line);
+			instrus[x].f(&datas.head, datas.line_number);
 			break;
 		}
 	}
 	if (!instrus[x].opcode)
 	{
 		fprintf(stderr, "L%d: unkown instruction %s\n",
-				datas.curr_line, datas.opcode);
+				datas.line_number, datas.opcode);
 		itfrees(datas.head);
 		exit(EXIT_FAILURE);
 	}

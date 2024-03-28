@@ -23,10 +23,10 @@ int main(int argc, char **argv)
 	{
 		if (strlen(rmv_spaces(line)) < 3 || rmv_spaces(line)[0] == '#')
 		{
-			datas.curr_line++;
+			datas.line_number++;
 			continue;
 		}
-		datas.curr_line++;
+		datas.line_number++;
 		tok = strtok(line, " \n");
 		for (x = 0; tok != NULL && x < 2; x++)
 		{
@@ -40,7 +40,7 @@ int main(int argc, char **argv)
 		}
 		if (strcmp(datas.opcode, "push") == 0 && x == 1)
 		{
-			fprintf(stderr, "L%d: usage: push integer\n", datas.curr_line);
+			fprintf(stderr, "L%d: usage: push integer\n", datas.line_number);
 			itfrees(datas.head);
 			exit(EXIT_FAILURE);
 		}

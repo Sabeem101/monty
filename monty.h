@@ -44,7 +44,7 @@ typedef struct instruction_s
  * @opcode: op code
  * @head: stack head
  * @trgt_file: file to open
- * @curr_line: current line
+ * @line_number: current line
  *
  * Description: structure to easily handle and do functions
  */
@@ -55,7 +55,7 @@ typedef struct data
 	char *opcode;
 	stack_t *head;
 	FILE *trgt_file;
-	unsigned int curr_line;
+	unsigned int line_number;
 } data;
 data datas;
 
@@ -63,52 +63,52 @@ data datas;
 int main(int argc, char **argv);
 
 /* oppush.c */
-void op_push(stack_t **head, unsigned int curr_line);
+void op_push(stack_t **head, unsigned int line_number);
 
 /* oppall.c */
-void op_pall(stack_t **head, unsigned int curr_line);
+void op_pall(stack_t **head, unsigned int line_number);
 
 /* oppint.c */
-void op_pint(stack_t **head, unsigned int curr_line);
+void op_pint(stack_t **head, unsigned int line_number);
 
 /* oppop.c */
-void op_pop(stack_t **head, unsigned int curr_line);
+void op_pop(stack_t **head, unsigned int line_number);
 
 /* opswap.c */
-void op_swap(stack_t **head, unsigned int curr_line);
+void op_swap(stack_t **head, unsigned int line_number);
 
 /* opadd.c */
-void op_add(stack_t **head, unsigned int curr_line);
+void op_add(stack_t **head, unsigned int line_number);
 
 /* opnop.c */
-void op_nop(stack_t **head, unsigned int curr_line);
+void op_nop(stack_t **head, unsigned int line_number);
 
 /* opsub.c */
-void op_sub(stack_t **head, unsigned int curr_line);
+void op_sub(stack_t **head, unsigned int line_number);
 
 /* opdiv.c */
-void op_div(stack_t **head, unsigned int curr_line);
+void op_div(stack_t **head, unsigned int line_number);
 
 /* opmul.c */
-void op_mul(stack_t **head, unsigned int curr_line);
+void op_mul(stack_t **head, unsigned int line_number);
 
 /* opmod.c */
-void op_mod(stack_t **head, unsigned int curr_line);
+void op_mod(stack_t **head, unsigned int line_number);
 
 /* oppchar.c */
-void op_pchar(stack_t **head, unsigned int curr_line);
+void op_pchar(stack_t **head, unsigned int line_number);
 
 /* oppstr.c */
-void op_pstr(stack_t **head, unsigned int curr_line);
+void op_pstr(stack_t **head, unsigned int line_number);
 
 /* oprotl.c */
-void op_rotl(stack_t **head, unsigned int curr_line);
+void op_rotl(stack_t **head, unsigned int line_number);
 
 /* oprotr.c */
-void op_rotr(stack_t **head, unsigned int curr_line);
+void op_rotr(stack_t **head, unsigned int line_number);
 
 /* switch_modes.c */
-void switch_modes(stack_t **head, unsigned int curr_line);
+void switch_modes(stack_t **head, unsigned int line_number);
 
 /* execute.c */
 void itexecs(void);
