@@ -14,7 +14,7 @@ void op_div(stack_t **head, unsigned int curr_line)
 
 	if (!*head || (*head)->next == NULL)
 	{
-		fprintf(stderr, "L%d: can't divide, stack too short\n", curr_line);
+		fprintf(stderr, "L%d: can't div, stack too short\n", curr_line);
 		itfrees(datas.head);
 		exit(EXIT_FAILURE);
 	}
