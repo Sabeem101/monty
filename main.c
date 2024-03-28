@@ -40,7 +40,7 @@ int main(int argc, char **argv)
 		}
 		if (strcmp(datas.opcode, "push") == 0 && x == 1)
 		{
-			fprintf(stderr, "L%d: Usage: Push integer\n", datas.curr_line);
+			fprintf(stderr, "L%d: usage: push integer\n", datas.curr_line);
 			itfrees(datas.head);
 			exit(EXIT_FAILURE);
 		}
