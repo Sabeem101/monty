@@ -9,7 +9,7 @@
  */
 void op_pint(stack_t **head, unsigned int line_number)
 {
-	if (!head)
+	if (!*head)
 	{
 		fprintf(stderr, "L%d: can't pint, stack empty\n", line_number);
 		itfrees(datas.head);
